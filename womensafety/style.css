@@ -3,7 +3,7 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 header{
@@ -103,30 +103,6 @@ a{
       }
 }
 
-
-
-
-body {
-    font-family: Arial, sans-serif;
-  }
-  
-  .chat-icon {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 50px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .chat-icon:hover {
-    background-color: #0056b3;
-  }
-
 /*body*/
 * {
     margin: 0;
@@ -145,7 +121,7 @@ main {
 }
 
 #hero {
-    background-image: url('1.jpg');
+    background-image: url('WhatsApp Image 2024-09-05 at 22.54.44_e8a45b50.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -160,8 +136,9 @@ main {
 }
 
 .cta-button {
-    background-color: #ff6f61;
+    background-color: rgb(247, 40, 40);
     color: #311c1c;
+    font-weight:bolder;
     border: none;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -213,6 +190,7 @@ main {
 
 .feature-card img {
     max-width: 100%;
+    max-height: 200px;
     border-radius: 10px;
 }
 
@@ -250,7 +228,7 @@ body {
 }
 
 footer {
-    background-color: #000000;
+    background-color: #333;
     color: #fff;
     padding: 2rem 0;
 }
