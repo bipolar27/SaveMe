@@ -14,3 +14,6 @@ document.querySelectorAll(".nav-link").forEach(n=>n.
     }))
 
     
+function openChat() {
+    alert("Chat window opened!");
+}

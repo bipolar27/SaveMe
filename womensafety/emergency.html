@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Command Button</title>
+    <link rel="stylesheet" href="emergency.css">
+</head>
+<body>
+    <div class="container">
+        <h1>checking Speech to Text</h1>
+  <h2>Enter Words:</h2>
+    <input type="text" id="wordInput" placeholder="Type a word and press Enter">
+        <section class="voice-section">
+            <button onclick=add() id="voiceButton">Press to Speak</button>
+            <p id="result"></p>
+        </section>
+        <h3>Words List:</h3>
+    <ul id="wordList"></ul>
+    </div>
+    <script src="emergency.js"></script>
+</body>
+</html>
