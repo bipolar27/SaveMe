@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sender</title>
+</head>
+<body>
+    <h2>Send Email</h2>
+    <button id="sendEmailBtn">Send Email</button>
+
+    <script>
+        document.getElementById("sendEmailBtn").addEventListener("click", function() {
+            fetch("/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    to: "sourajit.kar.cse26@heritageit.edu.in",
+                    subject: "very urgent mail ",
+                    text: " You win million dollar lottery."
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Email sent:", data);
+            })
+            .catch(error => {
+                console.error("Error sending email:", error);
+            });
+        });
+    </script>
+</body>
+</html>
